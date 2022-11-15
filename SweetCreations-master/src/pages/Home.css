@@ -1,0 +1,96 @@
+.head {
+  background-color: rgb(255, 218, 230);
+  padding: 50px 50px;
+}
+
+.logo {
+  position: relative;
+  float: left;
+  text-align: left;
+}
+
+.bod {
+  background-color: rgb(255, 218, 230);
+}
+
+.body-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 100px;
+}
+
+.left {
+  position: relative;
+  text-align: left;
+  float: left;
+  padding: 0 50px;
+}
+
+.right {
+  position: relative;
+  text-align: center;
+  float: right;
+  padding: 0 50px;
+}
+
+.last {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.foot {
+  background-color: rgb(255, 218, 230);
+  padding: 50px 50px;
+}
+
+.butt {
+  position: relative;
+  background-color: transparent;
+  padding: 12px 40px;
+  text-decoration: none;
+  border: 1.5px solid;
+  margin: 12px;
+}
+.butt:hover{
+  background-color: rgb(255, 245, 248);
+  color: rgba(0, 0, 0, 0.239);
+}
+.butt:active {
+  color: black;
+}
+.topbutt {
+  position: relative;
+  float: right;
+  margin-top: -24px;
+}
+
+.git {
+  font-size: 50px;
+}
+
+.flex-container {
+  display: flex;
+  font-size: 10px;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.cake {
+  width: 400px;
+}
+
+.strawb {
+  width: 300px;
+  height: 300px;
+}
+
+.cookie {
+
+}
+
+.brownies {
+
+}
+
+.pie {
+}

@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(255, 218, 230);
+    text-align: center;
+}
+
+.body {
+    margin-top: 100px;
+}
+
+.link {
+    color:rgb(155, 160, 140);
+}
+
+.logoheader {
+    position: relative;
+    float: left;
+    margin: 50px;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+
+.pass {
+    margin-left: 4px;
+}
+
+.passconf {
+    margin-left: -58px;
+}
