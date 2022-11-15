@@ -52,8 +52,8 @@
   margin: 12px;
 }
 .butt:hover{
-  background-color: rgb(255, 245, 248);
-  color: rgba(0, 0, 0, 0.239);
+  background-color: rgba(255, 245, 248, 0.301);
+  color: rgba(0, 0, 0, 0.793);
 }
 .butt:active {
   color: black;
