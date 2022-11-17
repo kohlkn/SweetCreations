@@ -8,10 +8,12 @@ import StrawberryCupcakes from './pages/StrawberryCupcakes'
 import Cookies from './pages/Cookies'
 import Brownies from './pages/Brownies'
 import Review from './pages/Review'
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop>
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route path='/Home' element={<Home />} />
@@ -22,6 +24,7 @@ function App() {
         <Route path='/Brownies' element={<Brownies />} />
         <Route path='/Review' element={<Review />} />
       </Routes>
+      </ScrollToTop>
     </Router>
   );
 }
