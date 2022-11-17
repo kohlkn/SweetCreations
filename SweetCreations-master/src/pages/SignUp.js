@@ -31,7 +31,7 @@ export default function SignUp(){
                 <label class='signup'>Already have an account? <Link to='/Login' class='link'>Login here</Link></label>
                 <br></br>
                 <br></br>
-                <button class='butt'>Login</button>
+                <button class='butt'>Sign up</button>
             </body>
         </>
     );
