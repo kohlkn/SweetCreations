@@ -10,6 +10,14 @@ export default function Review() {
     alert(`The name you entered was: ${name}`);
   };
 
+    const [textarea, setTextarea] = useState(
+    "Leave a review..."
+  );
+
+  const handleChange = (event) => {
+    setTextarea(event.target.value)
+  }
+
   return (
     <form onSubmit={handleSubmit}>
       <br></br>
@@ -27,9 +35,7 @@ export default function Review() {
       <br></br>
       <label>
         Review:<br></br>
-        <textarea rows="4" cols="50">
-          Leave your review of the recipe here and click submit!
-        </textarea>
+        <textarea rows="4" cols="50" value={textarea} onChange={handleChange} />
       </label>
       <br></br>
       <br></br>
