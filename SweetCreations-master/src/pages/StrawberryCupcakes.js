@@ -3,6 +3,12 @@ import { Link, useNavigate } from "react-router-dom";
 import strawb from '../images/strawb.png'
 
 export default function StrawberryCupcakes() {
+
+  const navigate = useNavigate()
+
+  function cookies(e){
+    navigate('/Review');
+  }
   return (
     <>
       <div class="header">
@@ -76,6 +82,7 @@ export default function StrawberryCupcakes() {
           can be stored in an airtight container at room temperature without the
           garnish for up to 3 days or refrigerated for up to 1 week.<br></br>
         </p>
+        <button onClick={cookies} class='butt'>Leave A Review</button>
       </body>
     </>
   );
