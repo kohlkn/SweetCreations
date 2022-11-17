@@ -6,11 +6,14 @@ import cookie from '../images/cookie.png'
 import brownies from '../images/brownies.png'
 import pie from '../images/pie.png'
 import { useNavigate } from 'react-router-dom'
+import { useState } from "react";
+import ReactDOM from 'react-dom/client';
 
 
 export default function Home() {
 
   const navigate = useNavigate()
+  
 
   function handleClick(e){
     navigate('/Login');
@@ -144,4 +147,5 @@ export default function Home() {
       </footer>
     </>
   );
+ 
 }

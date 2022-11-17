@@ -7,6 +7,7 @@ import SignUp from './pages/SignUp'
 import StrawberryCupcakes from './pages/StrawberryCupcakes'
 import Cookies from './pages/Cookies'
 import Brownies from './pages/Brownies'
+import Review from './pages/Review'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/StrawberryCupcakes' element={<StrawberryCupcakes />} />
         <Route path='/Cookies' element={<Cookies />} />
         <Route path='/Brownies' element={<Brownies />} />
+        <Route path='/Review' element={<Review />} />
       </Routes>
     </Router>
   );

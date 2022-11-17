@@ -3,6 +3,13 @@ import { Link, useNavigate } from "react-router-dom";
 import cookie from '../images/cookie.png'
 
 export default function Cookies() {
+  
+  const navigate = useNavigate()
+
+  function cookies(e){
+    navigate('/Review');
+  }
+
   return (
     <>
       <div class="header">
@@ -47,6 +54,7 @@ export default function Cookies() {
           them out when they are just BARELY starting to turn brown.<br></br>
           9. Let them sit on the baking pan for 2 minutes before removing to cooling rack.<br></br>
         </p>
+        <button onClick={cookies} class='butt'>Leave A Review</button>
       </body>
     </>
   );
