@@ -1,6 +1,7 @@
 import "./Recipes.css";
 import { Link, useNavigate } from "react-router-dom";
 import strawb from '../images/strawb.png'
+import Review from './Rev'
 
 export default function StrawberryCupcakes() {
 
@@ -9,6 +10,7 @@ export default function StrawberryCupcakes() {
   function cookies(e){
     navigate('/Review');
   }
+
   return (
     <>
       <div class="header">
@@ -83,6 +85,7 @@ export default function StrawberryCupcakes() {
           garnish for up to 3 days or refrigerated for up to 1 week.<br></br>
         </p>
         <button onClick={cookies} class='butt'>Leave A Review</button>
+        <Review></Review>
       </body>
     </>
   );

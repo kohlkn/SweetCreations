@@ -1,6 +1,7 @@
 import "./Recipes.css";
 import { Link, useNavigate } from "react-router-dom";
 import brownies from '../images/brownies.png'
+import Review from './Rev'
 
 export default function Brownies() {
 
@@ -56,6 +57,8 @@ export default function Brownies() {
           also freeze well!<br></br>
         </p>
         <button onClick={cookies} class='butt'>Leave A Review</button>
+
+        <Review></Review>
       </body>
     </>
   );

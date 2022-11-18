@@ -1,6 +1,7 @@
 import "./Recipes.css";
 import { Link, useNavigate } from "react-router-dom";
 import cookie from '../images/cookie.png'
+import Review from './Rev'
 
 export default function Cookies() {
   
@@ -55,6 +56,7 @@ export default function Cookies() {
           9. Let them sit on the baking pan for 2 minutes before removing to cooling rack.<br></br>
         </p>
         <button onClick={cookies} class='butt'>Leave A Review</button>
+        <Review></Review>
       </body>
     </>
   );
