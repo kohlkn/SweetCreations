@@ -27,3 +27,7 @@ body {
     float: left;
     text-align: left;
 }
+
+ul {
+    list-style-type: none;
+   }
