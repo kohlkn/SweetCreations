@@ -8,6 +8,7 @@ const app = express()
 const urlencodedParser = bodyParser.urlencoded({extended : false})
 app.use(bodyParser.json(), urlencodedParser)
 
+                vv change this to your own cluster vv
 const dbURI = "mongodb+srv://admin:admin@sweetcreations.sfg1cht.mongodb.net/test"
 
 mongoose.connect(dbURI, {useNewUrlParser: true, useUnifiedTopology: true})
