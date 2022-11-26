@@ -1,5 +1,6 @@
 import "./Home.css";
 import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import ReactDOM from "react-dom/client";
 
 export default function Review() {
@@ -24,8 +25,14 @@ export default function Review() {
 
   return (
     <form onSubmit={handleSubmit}>
-    <br></br>
-    <br></br>
+      <div class="header">
+        <Link to="/Home" class="logoheader">
+          Sweet
+          <br></br>
+          Creations
+        </Link>
+      </div>
+    
     <h1>Leave A Review!</h1>
       <label>Name:
       <input 
@@ -34,7 +41,7 @@ export default function Review() {
         value={inputs.name || ""} 
         onChange={handleChange}
       />
-          <br></br>
+    <br></br>
     <br></br>
       </label>
 
@@ -46,7 +53,7 @@ export default function Review() {
           value={inputs.review || ""}
           onChange={handleChange}
         />      
-            <br></br>
+    <br></br>
     <br></br>
        </label>
         <input type="submit" />
