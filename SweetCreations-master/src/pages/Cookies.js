@@ -1,14 +1,44 @@
 import "./Recipes.css";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import cookie from '../images/cookie.png'
 
-export default function Cookies() {
+const list = document.querySelector("#myUL");
+  const input = document.querySelector("#usrInput");
+  const button = document.querySelector("#addBtn");
   
-  const navigate = useNavigate()
+  // const divlist = document.querySelector("#div_list");
 
-  function cookies(e){
-    navigate('/Review');
-  }
+  // const review = document.createElement("h2");
+  // review.innerHTML = "Leave a Comment!";
+  // divlist.appendChild(review);
+
+  // const comment = document.createElement("input");
+  // comment.setAttribute('type', 'text');
+  // divlist.appendChild(comment);
+
+  // const post = document.createElement("button");
+  // post.innerHTML = "Post";
+  // divlist.appendChild(post);
+  
+  /* <input type="text" name="item" id="usrInput"></input> */ 
+
+  button.addEventListener("click", () => {
+    const myItem = input.value;
+    input.value = "";
+    const listItem = document.createElement("li");
+    const remove = document.createElement("button");
+    listItem.innerHTML = myItem;
+    remove.innerHTML = "delete";
+    list.appendChild(listItem);
+    list.appendChild(remove);
+    input.focus();
+    remove.addEventListener("click", () => {
+      list.removeChild(listItem);
+      list.removeChild(remove);
+    });
+  });
+
+export default function Cookies() {
 
   return (
     <>
@@ -54,7 +84,6 @@ export default function Cookies() {
           them out when they are just BARELY starting to turn brown.<br></br>
           9. Let them sit on the baking pan for 2 minutes before removing to cooling rack.<br></br>
         </p>
-        <button onClick={cookies} class='butt'>Leave A Review</button>
       </body>
     </>
   );

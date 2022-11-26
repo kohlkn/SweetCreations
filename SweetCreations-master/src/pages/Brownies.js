@@ -4,12 +4,6 @@ import brownies from '../images/brownies.png'
 
 export default function Brownies() {
 
-  const navigate = useNavigate()
-  
-  function cookies(e){
-    navigate('/Review');
-  }
-
   return (
     <>
       <div class="header">
@@ -55,7 +49,6 @@ export default function Brownies() {
           in an airtight container at room temperature for up to 3 days. These
           also freeze well!<br></br>
         </p>
-        <button onClick={cookies} class='butt'>Leave A Review</button>
       </body>
     </>
   );

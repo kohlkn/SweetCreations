@@ -21,3 +21,13 @@ body {
     text-decoration: none;
     color: black;
 }
+
+.list {
+    list-style: none;
+    float: left;
+    text-align: left;
+}
+
+ul {
+    list-style-type: none;
+   }
